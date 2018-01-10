@@ -31,6 +31,7 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'git' \
+  'go' \
   'history' \
   'directory' \
   'spectrum' \
