@@ -31,3 +31,7 @@
 [submodule "modules/laptop"]
 	path = modules/laptop
 	url = git@github.com:dlucian/laptop.git
+[submodule "modules/powerline-fonts"]
+	path = modules/powerline-fonts
+	url = https://github.com/powerline/fonts.git
+	branch = master
