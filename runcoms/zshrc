@@ -5,6 +5,8 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+POWERLEVEL9K_MODE='awesome-fontconfig'
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -13,3 +15,13 @@ fi
 # Customize to your needs...
 
 export PATH="$HOME/.composer/vendor/bin:$HOME/.bin:$PATH"
+
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
+DEFAULT_USER="lucian"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+# extras: battery public_ip
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
