@@ -16,6 +16,9 @@ fi
 
 export PATH="$HOME/.composer/vendor/bin:$HOME/.bin:$PATH"
 
+alias px="phpunit --testdox"
+alias pa="php artisan"
+
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 # POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳> "
