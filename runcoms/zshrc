@@ -14,7 +14,7 @@ fi
 
 # Customize to your needs...
 
-export PATH="$HOME/.composer/vendor/bin:$HOME/.bin:$PATH"
+export PATH="/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.1/sbin:$HOME/.composer/vendor/bin:$HOME/.bin:$PATH"
 
 alias px="phpunit --testdox"
 alias pa="php artisan"
