@@ -16,9 +16,16 @@ fi
 
 export PATH="/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.1/sbin:$HOME/.composer/vendor/bin:$HOME/.bin:$PATH"
 
-alias px="phpunit --testdox"
+alias px="phpunit --testdox -v"
 alias pa="php artisan"
 alias pwm="watchman-make -p '**/*.php' --make=\"clear && printf '\e[3J' && vendor/bin/phpunit\" -t"
+
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+
+alias sphpini='subl /usr/local/etc/php/7.1/php.ini'
+# gem install colorls
+alias lc='colorls'
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
@@ -29,3 +36,7 @@ DEFAULT_USER="lucian"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 # extras: battery public_ip
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
