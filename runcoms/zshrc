@@ -38,5 +38,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/Settings/aliases.zsh" && source "${HOME}/Settings/aliases.zsh"
 
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
